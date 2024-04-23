@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+:root{
+    --verde-principal: #00B925;
+    --cinza-fundo: #d9d9d9;
+    --letra-titulo: montserrat;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-size: 10px;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--cinza-fundo);
+}
+
+header{
+    height: 215px;
+    background-color: var(--verde-principal);
+    display: block;
+}
+
+.logo {
+    text-align: center;
+}
+
+.navbar{
+    background-color: #ffffff;
+    display: block;
+    height: 93px;
+    width: 100%;
+    margin-bottom: 72px;
+}
+
+div > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-top: 20px;
+}
+
+.menu a {
+    color: black;
+    font-size: 4rem;
+}
+
+.container1 {
+    width: 1519.2px;
+    height: 481px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.noticia-principal {
+    height: 481px;
+    width: 904px;
+    background-color: red;
+    margin-left: 92px;
+    margin-bottom: 100px;
+}
+
+.noticias-laterais{
+    background-color: blue;
+    width: 309px;
+    height: 473px;
+    position: absolute;
+    right: 93px;
+}
+
+.container2{
+    width: 897px;
+    height: 400px;
+    display: flex;
+    margin: 79px 0 45px 93px;
+}
+
+.noticia-secundaria{
+    width: 466px;
+    height: 400px;
+    background-color: red;
+}
+
+.noticia-terciaria{
+    width: 338px;
+    height: 400px;
+    background-color: red;
+    margin-left: 93px;
+}
+
+.resultados-jogos{
+    width: 309px;
+    height: 901px;
+    background-color: purple;
+    position: absolute;
+    left: 1118px;
+    top: 940px;
+}
+
+.video-ale{
+    margin-left: 164px;
+    margin-bottom: 100px;
+}
+
+.video-ale p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.publi-principal{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    background-color: purple;
+}
+
+.propaganda{
+    width: 1261px;
+    height: 301px;
+    background-color: brown;
+    margin-left: 93px;
+}
+
+.container3{
+    width: 1261px;
+    height: 350px;
+    margin-top: 89px;
+    margin-left: 93px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 61px;
+}
+
+.melhor-jogador{
+    width: 710px;
+    height: 350px;
+    background-color: azure;
+}
+
+.aposta{
+    width: 385px;
+    height: 297px;
+    background-color: beige;
+}
+
+footer {
+    height: 213px;
+    width: 100%;
+    background-color: var(--verde-principal);
+    color: white;
+}
+
+footer .container4{
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container4 .sobre{
+    width: 180px;
+    font-size: x-large;
+}
+
+.container4 .sobre a:hover{
+    text-decoration: underline;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 20px black;
+}
+
+.container4 h3{
+    margin-bottom: 10px;
+}
+
+.container4 ul li{
+    margin-left: 18px;
+    line-height: 1.5em;
+}
+
+.redes-sociais{
+    width: 400px;
+    font-size: x-large;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5em;
+}
+
+.copyright{
+    height: 120px;
+    font-size: large;
+    width: 350px;
+    margin-top: 20px;
+}
