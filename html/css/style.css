@@ -155,7 +155,7 @@ div > ul{
 }
 
 footer {
-    height: 213px;
+    height: 230px;
     width: 100%;
     background-color: var(--verde-principal);
     color: white;
@@ -174,11 +174,11 @@ footer .container4{
     font-size: x-large;
 }
 
-/*.container4 .sobre a:hover{
+.sobre li:hover{
     text-decoration: underline;
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-shadow: 2px 2px 20px black;
-}*/
+}
 
 .container4 h3{
     margin-bottom: 10px;
@@ -194,7 +194,7 @@ footer .container4{
     font-size: x-large;
     display: flex;
     justify-content: space-between;
-    line-height: 1.5em;
+    line-height: 1.8em;
 }
 
 .copyright{
