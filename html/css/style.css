@@ -55,6 +55,11 @@ div > ul{
     font-size: 4rem;
 }
 
+.menu a:hover {
+    font-size: 4.1rem;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.401);
+}
+
 .container1 {
     width: 1519.2px;
     height: 481px;
@@ -176,7 +181,7 @@ footer .container4{
 
 .sobre li:hover{
     text-decoration: underline;
-    font-size: 1.1em;
+    font-size: 1.01em;
     text-shadow: 2px 2px 20px black;
 }
 
