@@ -79,6 +79,13 @@ div > ul{
     margin-left: 92px;
     margin-bottom: 100px;
     position: relative;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.imagem-neto:hover{
+    width: 910px;
+    height: 485px;
+    cursor: pointer;
 }
 
 .imagem-neto img{
@@ -86,24 +93,45 @@ div > ul{
 }
 
 .imagem-neto h1{
-    width: 904px;
+    width: 100%;
     padding: 10px 0px;
     position: absolute;
-    bottom: 1px;
+    bottom: 0px;
     background-color: rgba(0, 0, 0, 0.15);
     font-family: var(--fonte-titulos);
     font-size: 4.5rem;
+    font-weight: bold;
     text-align: center;
     color: white;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.803);
 }
 
 .noticias-laterais{
-    background-color: blue;
     width: 309px;
     height: 473px;
     position: absolute;
     right: 93px;
+}
+
+.noticias-laterais>h2{
+    font-size: 2.5rem;
+    font-family: var(--fonte-titulos);
+    font-weight: bold;
+}
+
+.noticias-laterais ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.noticias-laterais li{
+    font-size: 2.5rem;
+    font-family: var(--fonte-escrita);
+    margin-top: 20px;
+}
+
+.noticias-laterais a{
+    color: black;
 }
 
 .container2{
@@ -116,7 +144,32 @@ div > ul{
 .noticia-secundaria{
     width: 466px;
     height: 400px;
-    background-color: red;
+    position: relative;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.noticia-secundaria img{
+    width: 100%;
+    height: 100%;
+}
+
+.noticia-secundaria h2{
+    background-color: rgba(0, 0, 0, 0.15);
+    color: white;
+    width: 100%;
+    padding: 10px 0px;
+    position: absolute;
+    bottom: 0px;
+    font-size: 2.5rem;
+    font-family: var(--fonte-titulos);
+    text-shadow: 4px 4px 4px black;
+    text-align: center;
+}
+
+.noticia-secundaria:hover{
+    width: 470px;
+    height: 402px;
+    cursor: pointer;
 }
 
 .noticia-terciaria{
