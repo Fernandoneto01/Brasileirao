@@ -7,8 +7,8 @@
 :root{
     --verde-principal: #00B925;
     --cinza-fundo: #d9d9d9;
-    --fonte-titulos: "Roboto", sans-serif;
-    --fonte-escrita: "Montserrat", sans-serif;
+    --fonte-titulos: "Montserrat", sans-serif;
+    --fonte-escrita: "Roboto", sans-serif;
 }
 
 *{
@@ -222,20 +222,29 @@ div > ul{
 .video-ale p {
     font-size: 1.2em;
     font-weight: bold;
+    font-family: var(--fonte-escrita);
+}
+
+.hr{
+    width: 1517.6px;
+}
+
+.fixo-propaganda{
+    width: 1517.6px;
+}
+
+.container-propaganda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .publi-principal{
-    display: flex;
-    justify-content: center;
     margin: 20px 0;
-    background-color: purple;
-}
-
-.propaganda{
-    width: 1261px;
-    height: 301px;
-    background-color: brown;
-    margin-left: 93px;
+    font-family: var(--fonte-titulos);
+    font-size: 2rem;
 }
 
 .container3{
@@ -257,7 +266,65 @@ div > ul{
 .aposta{
     width: 385px;
     height: 297px;
-    background-color: beige;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-aposta{
+    width: 385px;
+    height: 75.88px;
+    background-color: black;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    box-shadow: 4px 4px 15px rgba(0 , 0, 0, 0.5);
+}
+
+.titulo-aposta h3{
+    font-family: var(--fonte-titulos);
+    font-size: 2.5rem;
+}
+
+.corpo-aposta{
+    width: 385px;
+    height: 212.03px;
+    background-color: black;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px 15px rgba(0 , 0, 0, 0.5);
+}
+
+.corpo-aposta > .times{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.times :nth-child(2){
+    margin-top: 8px;
+    margin-bottom: 40px;
+    font-size: 3rem;
+    font-family: var(--fonte-escrita);
+}
+
+.botao-escolha{
+    display: flex;
+    justify-content: center;
+}
+
+.botao-config{
+    margin: 0px 15px;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.botao-config:hover{
+    cursor: pointer;
 }
 
 footer {
@@ -288,11 +355,13 @@ footer .container4{
 
 .container4 h3{
     margin-bottom: 10px;
+    font-family: var(--fonte-titulos);
 }
 
 .container4 ul li{
     margin-left: 18px;
     line-height: 1.5em;
+    font-family: var(--fonte-escrita);
 }
 
 .redes-sociais{
@@ -301,6 +370,7 @@ footer .container4{
     display: flex;
     justify-content: space-between;
     line-height: 1.8em;
+    font-family: var(--fonte-escrita);
 }
 
 .copyright{
@@ -308,4 +378,5 @@ footer .container4{
     font-size: large;
     width: 350px;
     margin-top: 20px;
+    font-family: var(--fonte-escrita);
 }
