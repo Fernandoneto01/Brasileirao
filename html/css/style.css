@@ -280,6 +280,7 @@ div > ul{
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+    box-shadow: 4px 4px 15px rgba(0 , 0, 0, 0.5);
 }
 
 .titulo-aposta h3{
@@ -294,6 +295,7 @@ div > ul{
     border-radius: 12px;
     display: flex;
     flex-direction: column;
+    box-shadow: 4px 4px 15px rgba(0 , 0, 0, 0.5);
 }
 
 .corpo-aposta > .times{
