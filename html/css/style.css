@@ -261,6 +261,7 @@ div > ul{
     width: 710px;
     height: 350px;
     background-color: azure;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .aposta{
