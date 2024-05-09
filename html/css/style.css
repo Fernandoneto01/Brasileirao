@@ -374,6 +374,11 @@ footer .container4{
     font-family: var(--fonte-escrita);
 }
 
+.insta{
+    display: flex;
+    flex: row;
+}
+
 .copyright{
     height: 120px;
     font-size: large;
