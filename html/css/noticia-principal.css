@@ -11,8 +11,8 @@
 :root{
     --verde-principal: #00B925;
     --cinza-fundo: #d9d9d9;
-    --fonte-titulos: "Roboto", sans-serif;
-    --fonte-escrita: "Montserrat", sans-serif;
+    --fonte-titulos: "Montserrat", sans-serif;
+    --fonte-escrita: "Roboto", sans-serif;
 }
 
 *{
@@ -69,6 +69,14 @@ div > ul{
     font-size: 4.1rem;
     text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.401);
 }
+
+.mainnews { /* Nesse campo cuidar com a qualidade da fonte, para não deixar a leitura carregada */
+    width: 309px;
+    font-size: 20pt;
+    font-variant: var(--fonte-escrita);
+
+}
+
 footer {
     height: 230px;
     width: 100%;
@@ -97,11 +105,13 @@ footer .container4{
 
 .container4 h3{
     margin-bottom: 10px;
+    font-family: var(--fonte-titulos);
 }
 
 .container4 ul li{
     margin-left: 18px;
     line-height: 1.5em;
+    font-family: var(--fonte-escrita);
 }
 
 .redes-sociais{
@@ -110,6 +120,7 @@ footer .container4{
     display: flex;
     justify-content: space-between;
     line-height: 1.8em;
+    font-family: var(--fonte-escrita);
 }
 
 .copyright{
@@ -117,4 +128,5 @@ footer .container4{
     font-size: large;
     width: 350px;
     margin-top: 20px;
+    font-family: var(--fonte-escrita);
 }
