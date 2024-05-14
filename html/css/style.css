@@ -376,7 +376,13 @@ footer .container4{
 
 .insta{
     display: flex;
-    flex: row;
+    flex-direction: row;
+    align-items: center;
+}
+
+.youtube{
+    display: flex;
+    flex-direction: row;
 }
 
 .copyright{
