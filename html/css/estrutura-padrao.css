@@ -107,9 +107,21 @@ footer .container4{
     width: 400px;
     font-size: x-large;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     line-height: 1.8em;
     font-family: var(--fonte-escrita);
+}
+
+.insta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.youtube{
+    display: flex;
+    flex-direction: row;
 }
 
 .copyright{
