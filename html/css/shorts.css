@@ -11,61 +11,6 @@
     --fonte-escrita: "Roboto", sans-serif;
 }
 
-*{
-    margin: 0px;
-    padding: 0px;
-}
-
-html{
-    font-size: 10px;
-}
-
-a{
-    color:white;
-    text-decoration: none;
-}
-
-body{
-    background-color: var(--cinza-fundo);
-}
-
-header{
-    height: 215px;
-    background-color: var(--verde-principal);
-    display: block;
-}
-
-.logo {
-    text-align: center;
-}
-
-.navbar{
-    background-color: #ffffff;
-    display: block;
-    height: 93px;
-    width: 100%;
-    margin-bottom: 72px;
-    font-family: var(--fonte-titulos);
-}
-
-div > ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style-type: none;
-    padding-top: 20px;
-}
-
-.menu a {
-    color: black;
-    font-size: 4rem;
-}
-
-.menu a:hover {
-    font-size: 4.1rem;
-    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.401);
-}
-
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -74,64 +19,10 @@ div > ul{
 }
 
 .grid-item {
-    margin: 0px 15px;
+    margin: 0px 15px 100px 15px;
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     height: auto;
     font-size: 30px;
     text-align: center;
-}
-
-footer {
-    height: 230px;
-    width: 100%;
-    background-color: var(--verde-principal);
-    color: white;
-}
-
-footer .container4{
-    width: 100%;
-    padding-top: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.container4 .sobre{
-    width: 180px;
-    font-size: x-large;
-}
-
-.sobre li:hover{
-    text-decoration: underline;
-    font-size: 1.01em;
-    text-shadow: 2px 2px 20px black;
-}
-
-.container4 h3{
-    margin-bottom: 10px;
-    font-family: var(--fonte-titulos);
-}
-
-.container4 ul li{
-    margin-left: 18px;
-    line-height: 1.5em;
-    font-family: var(--fonte-escrita);
-}
-
-.redes-sociais{
-    width: 400px;
-    font-size: x-large;
-    display: flex;
-    justify-content: space-between;
-    line-height: 1.8em;
-    font-family: var(--fonte-escrita);
-}
-
-.copyright{
-    height: 120px;
-    font-size: large;
-    width: 350px;
-    margin-top: 20px;
-    font-family: var(--fonte-escrita);
 }
