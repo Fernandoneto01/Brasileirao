@@ -11,7 +11,110 @@
 :root{
     --verde-principal: #00B925;
     --cinza-fundo: #d9d9d9;
-    --fonte-titulos: "Montserrat", sans-serif;
-    --fonte-escrita: "Roboto", sans-serif;
+    --fonte-titulos: "Roboto", sans-serif;
+    --fonte-escrita: "Montserrat", sans-serif;
 }
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-size: 10px;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--cinza-fundo);
+}
+
+header{
+    height: 215px;
+    background-color: var(--verde-principal);
+    display: block;
+}
+
+.logo {
+    text-align: center;
+}
+
+.navbar{
+    background-color: #ffffff;
+    display: block;
+    height: 93px;
+    width: 100%;
+    margin-bottom: 72px;
+    font-family: var(--fonte-titulos);
+}
+
+div > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-top: 20px;
+}
+
+.menu a {
+    color: black;
+    font-size: 4rem;
+}
+
+.menu a:hover {
+    font-size: 4.1rem;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.401);
+}
+footer {
+    height: 230px;
+    width: 100%;
+    background-color: var(--verde-principal);
+    color: white;
+}
+
+footer .container4{
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container4 .sobre{
+    width: 180px;
+    font-size: x-large;
+}
+
+.sobre li:hover{
+    text-decoration: underline;
+    font-size: 1.01em;
+    text-shadow: 2px 2px 20px black;
+}
+
+.container4 h3{
+    margin-bottom: 10px;
+}
+
+.container4 ul li{
+    margin-left: 18px;
+    line-height: 1.5em;
+}
+
+.redes-sociais{
+    width: 400px;
+    font-size: x-large;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.8em;
+}
+
+.copyright{
+    height: 120px;
+    font-size: large;
+    width: 350px;
+    margin-top: 20px;
+}
