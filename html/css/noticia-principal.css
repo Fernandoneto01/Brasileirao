@@ -11,8 +11,8 @@
 :root{
     --verde-principal: #00B925;
     --cinza-fundo: #d9d9d9;
-    --fonte-titulos: "Roboto", sans-serif;
-    --fonte-escrita: "Montserrat", sans-serif;
+    --fonte-titulos: "Montserrat", sans-serif;
+    --fonte-escrita: "Roboto", sans-serif;
 }
 
 *{
