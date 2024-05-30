@@ -262,6 +262,20 @@ div > ul{
     height: 350px;
     background-color: azure;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.melhor-jogador h2{
+    width: 100%;
+    padding: 10px 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    font-size: 4rem;
+    font-family: var(--fonte-titulos);
+    text-align: center;
+    text-shadow: 4px 4px 4px black;
 }
 
 .aposta{
