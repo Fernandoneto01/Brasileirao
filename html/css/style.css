@@ -208,10 +208,21 @@ div > ul{
 .resultados-jogos{
     width: 309px;
     height: 901px;
-    background-color: purple;
     position: absolute;
     left: 1118px;
     top: 940px;
+    font-family: var(--fonte-titulos);
+    font-size: 2.1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.jogos{
+    margin: 10px 0px;
+}
+
+.jogos img{
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .video-ale{
