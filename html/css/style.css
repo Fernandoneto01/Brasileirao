@@ -33,6 +33,7 @@ header{
     height: 215px;
     background-color: var(--verde-principal);
     display: block;
+    position: relative;
 }
 
 .logo {
@@ -64,6 +65,24 @@ div > ul{
 .menu a:hover {
     font-size: 4.1rem;
     text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.401);
+}
+
+#burguer{
+    display: none;
+}
+
+@media (max-width:830px){
+    #burguer{
+        display: block;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color: white;
+    }
+
+    .navbar{
+        display: none;
+    }
 }
 
 .container1 {
