@@ -69,11 +69,51 @@ div > ul{
     font-size: 4.1rem;
     text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.401);
 }
+h1{
+    font-size: 40pt;
+    font-variant: var(--fonte-titulos);
+    margin-left: 270px;
+    margin-right: 350px;
+    margin-bottom: 20px;
+    text-align: justify;
 
+}
+h2{
+    font-variant: var(--fonte-titulos);
+    margin-left: 270px;
+    text-align: justify;
+    margin-bottom: 20px;
+
+}
+.hr{
+    width: 905px;
+    margin-bottom: 20px;
+    margin-left: 270px;
+
+}
 .mainnews { /* Nesse campo cuidar com a qualidade da fonte, para não deixar a leitura carregada */
-    width: 309px;
+
     font-size: 20pt;
     font-variant: var(--fonte-escrita);
+    margin-left: 270px;
+    margin-right: 350px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.maintext {
+
+    font-size: 20pt;
+    font-variant: var(--fonte-escrita);
+    margin-left: 270px;
+    margin-right: 350px;
+    text-align: justify;
+    margin-bottom: 20px;
+
+}
+
+h3{
+    margin-left: 700px;
+    margin-bottom: 20px;
 
 }
 
