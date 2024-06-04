@@ -71,26 +71,13 @@ div > ul{
     display: none;
 }
 
-@media (max-width:830px){
-    #burguer{
-        display: block;
-        position: absolute;
-        bottom: 20px;
-        left: 20px;
-        color: white;
-    }
-
-    .navbar{
-        display: none;
-    }
-}
-
 .container1 {
     width: 1519.2px;
     height: 481px;
     display: flex;
     justify-content: space-between;
     position: relative;
+    background-color: purple;
 }
 
 .imagem-neto{
@@ -100,6 +87,7 @@ div > ul{
     margin-bottom: 100px;
     position: relative;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    background-color: green;
 }
 
 .imagem-neto:hover{
@@ -108,12 +96,8 @@ div > ul{
     cursor: pointer;
 }
 
-.imagem-neto img{
-    width: 100%;
-}
-
 .imagem-neto h1{
-    width: 100%;
+    max-width: 100%;
     padding: 10px 0px;
     position: absolute;
     bottom: 0px;
@@ -463,3 +447,67 @@ footer .container4{
     margin-top: 20px;
     font-family: var(--fonte-escrita);
 }
+
+@media (max-width:830px){
+    #burguer{
+        display: block;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color: white;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .container1{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .imagem-neto{
+        width: 500px;
+        height: 200px;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .imagem-neto a img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .imagem-neto:hover{
+        width: 510px;
+        height: 210px;
+    }
+
+    .imagem-neto a img:hover{
+        width: 510px;
+        height: 210px;
+    }
+
+    .imagem-neto h1{
+        font-size: 2rem;
+    }
+
+    .noticias-laterais{
+        background-color: red;
+    }
+}
+
+/*.imagem-neto h1{
+    max-width: 100%;
+    padding: 10px 0px;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.15);
+    font-family: var(--fonte-titulos);
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.803);
+}*/
