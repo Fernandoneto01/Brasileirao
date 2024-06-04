@@ -77,7 +77,6 @@ div > ul{
     display: flex;
     justify-content: space-between;
     position: relative;
-    background-color: purple;
 }
 
 .imagem-neto{
@@ -87,7 +86,6 @@ div > ul{
     margin-bottom: 100px;
     position: relative;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-    background-color: green;
 }
 
 .imagem-neto:hover{
@@ -494,20 +492,25 @@ footer .container4{
     }
 
     .noticias-laterais{
-        background-color: red;
+        display: block;
+        position: static;
+        margin: 40px auto;
+    }
+
+    .container2{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .noticia-secundaria{
+        align-self: center;
+        margin-bottom: 30px;
+    }
+
+    .noticia-terciaria{
+        margin: 0;
+        align-self: center;
     }
 }
-
-/*.imagem-neto h1{
-    max-width: 100%;
-    padding: 10px 0px;
-    position: absolute;
-    bottom: 0px;
-    background-color: rgba(0, 0, 0, 0.15);
-    font-family: var(--fonte-titulos);
-    font-size: 4.5rem;
-    font-weight: bold;
-    text-align: center;
-    color: white;
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.803);
-}*/
