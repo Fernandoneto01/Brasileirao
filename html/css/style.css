@@ -238,18 +238,18 @@ div > ul{
 }
 
 .hr{
-    width: 1517.6px;
+    width: 100%;
 }
 
 .fixo-propaganda{
-    width: 1517.6px;
+    width: 100%;
 }
 
 .container-propaganda{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -275,6 +275,11 @@ div > ul{
     background-color: azure;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
     position: relative;
+}
+
+.melhor-jogador img{
+    width: 100%;
+    height: auto;
 }
 
 .melhor-jogador h2{
@@ -531,5 +536,40 @@ footer .container4{
         width: 500px;
         height: 350px;
         margin-top: 50px;
+        margin-bottom: 8px;
+    }
+
+    .video-ale p{
+        margin-bottom: 20px;
+    }
+
+    .container3{
+        width: 100%;
+        height: auto;
+        margin-top: 89px;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 61px;
+    }
+
+    .melhor-jogador{
+        width: 450px;
+        height: auto;
+        align-self: center;
+        margin: 20px 0;
+    }
+
+    .melhor-jogador h2{
+        position: absolute;
+        font-size: 2.7rem;
+        font-family: var(--fonte-titulos);
+        text-align: center;
+        text-shadow: 4px 4px 4px black;
+    }
+
+    .aposta{
+        align-self: center;
+        margin-top: 25px;
     }
 }
