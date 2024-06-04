@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root{
-    --verde-principal: #00B925;
+    --verde-principal: #007de0;
     --cinza-fundo: #d9d9d9;
     --fonte-titulos: "Montserrat", sans-serif;
     --fonte-escrita: "Roboto", sans-serif;
@@ -134,5 +134,47 @@ footer .container4{
 
 
 .imagem-guerra{
+    width: 100%;
+    padding: 10px 0px;
+    font-family: var(--fonte-titulos);
+    font-size: 4.5rem;
+    font-weight: bold;
     text-align: center;
+    color: white;
+}
+
+.column{
+    float:left;
+    width: 33.3%;
+    padding: 5px;
+    margin-left: 200px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+.row-secund{
+    content: "";
+    clear: both;
+    display: table;
+    height: 350px;
+    width: 100%;
+}
+
+.maicon{
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+}
+
+.gremio-treino{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+}
+
+.container-secundarias{
+    height: 350px;
+    width: 100%;
 }
