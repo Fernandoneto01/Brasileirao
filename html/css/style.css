@@ -518,4 +518,18 @@ footer .container4{
         position: static;
         margin: 60px auto;
     }
+
+    .video-ale{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .video-ale iframe{
+        width: 500px;
+        height: 350px;
+        margin-top: 50px;
+    }
 }
