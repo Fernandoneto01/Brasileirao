@@ -513,4 +513,9 @@ footer .container4{
         margin: 0;
         align-self: center;
     }
+
+    .resultados-jogos{
+        position: static;
+        margin: 60px auto;
+    }
 }
