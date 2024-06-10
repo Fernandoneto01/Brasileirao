@@ -114,10 +114,10 @@ div > ul{
     height: 473px;
     position: absolute;
     right: 93px;
+    font-size: 2.5rem;
 }
 
 .noticias-laterais>h2{
-    font-size: 2.5rem;
     font-family: var(--fonte-titulos);
     font-weight: bold;
 }
@@ -128,7 +128,6 @@ div > ul{
 }
 
 .noticias-laterais li{
-    font-size: 2.5rem;
     font-family: var(--fonte-escrita);
     margin-top: 20px;
 }
@@ -330,6 +329,7 @@ div > ul{
     display: flex;
     flex-direction: column;
     box-shadow: 4px 4px 15px rgba(0 , 0, 0, 0.5);
+    position: relative;
 }
 
 .corpo-aposta > .times{
@@ -337,6 +337,21 @@ div > ul{
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 30px;
+    position: relative;
+}
+
+.time1{
+    position: absolute;
+    left: 40px;
+}
+.x{
+    position: absolute;
+    left: 170px;
+}
+
+.time2{
+    position: absolute;
+    right: 55px;
 }
 
 .times :nth-child(2){
@@ -349,6 +364,7 @@ div > ul{
 .botao-escolha{
     display: flex;
     justify-content: center;
+    margin-top: 80px;
 }
 
 .botao-config{
@@ -605,5 +621,95 @@ footer .container4{
 
     .copyright{
         margin-bottom: 30px;
+    }
+}
+
+@media (max-width:550px){
+    .imagem-neto{
+        width: 350px;
+        height: 186px;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .imagem-neto a img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .imagem-neto:hover{
+        width: 360px;
+        height: 195px;
+    }
+
+    .imagem-neto a img:hover{
+        width: 360px;
+        height: 195px;
+    }
+
+    .imagem-neto h1{
+        font-size: 1.5rem;
+    }
+
+    .noticias-laterais{
+       font-size: 1.8rem;
+       height: auto;
+    }
+
+    .noticia-secundaria{
+        width: 350px;
+        height: 300px;
+    }
+
+    .noticia-secundaria h2{
+        font-size: 1.5rem;
+    }
+    
+    .noticia-secundaria:hover{
+        width: 360px;
+        height: 310px;
+    }
+
+    .noticia-terciaria{
+        width: 350px;
+        height: 300px;
+    }
+    
+    .noticia-terciaria img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .noticia-terciaria h2{
+        font-size: 1.5rem;
+    }
+    
+    .noticia-terciaria:hover{
+        width: 360px;
+        height: 310px;
+    }
+
+    .propaganda img{
+        width: 350px;
+        height: 519px;
+    }
+
+    .melhor-jogador{
+        width: 350px;
+        height: 172px;
+    }
+    
+    .melhor-jogador img{
+        width: 100%;
+        height: auto;
+    }
+    
+    .melhor-jogador h2{
+        font-size: 2rem;
+    }
+
+    .aposta{
+        width: 350px;
+        height: 260px;
     }
 }
