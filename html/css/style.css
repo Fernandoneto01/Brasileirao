@@ -33,6 +33,7 @@ header{
     height: 215px;
     background-color: var(--verde-principal);
     display: block;
+    position: relative;
 }
 
 .logo {
@@ -66,8 +67,12 @@ div > ul{
     text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.401);
 }
 
+#burguer{
+    display: none;
+}
+
 .container1 {
-    width: 1519.2px;
+    width: 100%;
     height: 481px;
     display: flex;
     justify-content: space-between;
@@ -76,7 +81,8 @@ div > ul{
 
 .imagem-neto{
     height: 481px;
-    width: 904px;
+    width: 100%;
+    max-width: 904px;
     margin-left: 92px;
     margin-bottom: 100px;
     position: relative;
@@ -89,12 +95,8 @@ div > ul{
     cursor: pointer;
 }
 
-.imagem-neto img{
-    width: 100%;
-}
-
 .imagem-neto h1{
-    width: 100%;
+    max-width: 100%;
     padding: 10px 0px;
     position: absolute;
     bottom: 0px;
@@ -112,10 +114,10 @@ div > ul{
     height: 473px;
     position: absolute;
     right: 93px;
+    font-size: 2.5rem;
 }
 
 .noticias-laterais>h2{
-    font-size: 2.5rem;
     font-family: var(--fonte-titulos);
     font-weight: bold;
 }
@@ -126,7 +128,6 @@ div > ul{
 }
 
 .noticias-laterais li{
-    font-size: 2.5rem;
     font-family: var(--fonte-escrita);
     margin-top: 20px;
 }
@@ -136,7 +137,8 @@ div > ul{
 }
 
 .container2{
-    width: 897px;
+    width: 100%;
+    max-width: 897px;
     height: 400px;
     display: flex;
     margin: 79px 0 45px 93px;
@@ -208,10 +210,21 @@ div > ul{
 .resultados-jogos{
     width: 309px;
     height: 901px;
-    background-color: purple;
     position: absolute;
     left: 1118px;
     top: 940px;
+    font-family: var(--fonte-titulos);
+    font-size: 2.1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.jogos{
+    margin: 10px 0px;
+}
+
+.jogos img{
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .video-ale{
@@ -226,18 +239,18 @@ div > ul{
 }
 
 .hr{
-    width: 1517.6px;
+    width: 100%;
 }
 
 .fixo-propaganda{
-    width: 1517.6px;
+    width: 100%;
 }
 
 .container-propaganda{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -261,6 +274,26 @@ div > ul{
     width: 710px;
     height: 350px;
     background-color: azure;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.melhor-jogador img{
+    width: 100%;
+    height: auto;
+}
+
+.melhor-jogador h2{
+    width: 100%;
+    padding: 10px 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    font-size: 4rem;
+    font-family: var(--fonte-titulos);
+    text-align: center;
+    text-shadow: 4px 4px 4px black;
 }
 
 .aposta{
@@ -296,6 +329,7 @@ div > ul{
     display: flex;
     flex-direction: column;
     box-shadow: 4px 4px 15px rgba(0 , 0, 0, 0.5);
+    position: relative;
 }
 
 .corpo-aposta > .times{
@@ -303,6 +337,21 @@ div > ul{
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 30px;
+    position: relative;
+}
+
+.time1{
+    position: absolute;
+    left: 40px;
+}
+.x{
+    position: absolute;
+    left: 170px;
+}
+
+.time2{
+    position: absolute;
+    right: 55px;
 }
 
 .times :nth-child(2){
@@ -315,6 +364,7 @@ div > ul{
 .botao-escolha{
     display: flex;
     justify-content: center;
+    margin-top: 80px;
 }
 
 .botao-config{
@@ -327,8 +377,34 @@ div > ul{
     cursor: pointer;
 }
 
+.container-botao-retorno{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.botao-retorno{
+    margin-right: 50px;
+    margin-bottom: 25px;
+    width: 50px;
+    height: 50px;
+    font-size: 3rem;
+    border-radius: 50%;
+    color: white;
+    background-color: var(--verde-principal);
+    border: none;
+}
+
+.botao-retorno:hover{
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    font-size: 3.5rem;
+    transition: 0.3s ease-in-out;
+}
+
 footer {
-    height: 230px;
+    height: auto;
     width: 100%;
     background-color: var(--verde-principal);
     color: white;
@@ -336,14 +412,14 @@ footer {
 
 footer .container4{
     width: 100%;
-    padding-top: 30px;
+    padding:30px 3px 0px 3px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
 .container4 .sobre{
-    width: 180px;
+    width: auto;
     font-size: x-large;
 }
 
@@ -365,18 +441,275 @@ footer .container4{
 }
 
 .redes-sociais{
-    width: 400px;
     font-size: x-large;
-    display: flex;
-    justify-content: space-between;
     line-height: 1.8em;
     font-family: var(--fonte-escrita);
 }
 
+.insta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.youtube{
+    display: flex;
+    flex-direction: row;
+}
+
 .copyright{
-    height: 120px;
+    height: auto;
     font-size: large;
     width: 350px;
     margin-top: 20px;
     font-family: var(--fonte-escrita);
+}
+
+@media (max-width:830px){
+    body{
+        overflow-x: hidden;
+    }
+
+    #burguer{
+        display: block;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color: white;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .container1{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .imagem-neto{
+        width: 500px;
+        height: 200px;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .imagem-neto a img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .imagem-neto:hover{
+        width: 510px;
+        height: 210px;
+    }
+
+    .imagem-neto a img:hover{
+        width: 510px;
+        height: 210px;
+    }
+
+    .imagem-neto h1{
+        font-size: 2rem;
+    }
+
+    .noticias-laterais{
+        display: block;
+        position: static;
+        margin: 40px auto;
+    }
+
+    .container2{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .noticia-secundaria{
+        align-self: center;
+        margin-bottom: 30px;
+    }
+
+    .noticia-terciaria{
+        margin: 0;
+        align-self: center;
+    }
+
+    .resultados-jogos{
+        position: static;
+        margin: 60px auto;
+    }
+
+    .video-ale{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .video-ale iframe{
+        width: auto;
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 8px;
+    }
+
+    .video-ale p{
+        margin-bottom: 20px;
+    }
+
+    .container3{
+        width: 100%;
+        height: auto;
+        margin-top: 89px;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 61px;
+    }
+
+    .melhor-jogador{
+        width: 450px;
+        height: auto;
+        align-self: center;
+        margin: 20px 0;
+    }
+
+    .melhor-jogador h2{
+        position: absolute;
+        font-size: 2.7rem;
+        font-family: var(--fonte-titulos);
+        text-align: center;
+        text-shadow: 4px 4px 4px black;
+    }
+
+    .aposta{
+        align-self: center;
+        margin-top: 25px;
+    }
+
+    footer .container4{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .container4 .sobre{
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+
+    .sobre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
+
+    .redes-sociais p{
+        display: none;
+        margin-bottom: 15px;
+    }
+
+    .copyright{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:550px){
+    .imagem-neto{
+        width: 350px;
+        height: 186px;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .imagem-neto a img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .imagem-neto:hover{
+        width: 360px;
+        height: 195px;
+    }
+
+    .imagem-neto a img:hover{
+        width: 360px;
+        height: 195px;
+    }
+
+    .imagem-neto h1{
+        font-size: 1.5rem;
+    }
+
+    .noticias-laterais{
+       font-size: 1.8rem;
+       height: auto;
+    }
+
+    .noticia-secundaria{
+        width: 350px;
+        height: 300px;
+    }
+
+    .noticia-secundaria h2{
+        font-size: 1.5rem;
+    }
+    
+    .noticia-secundaria:hover{
+        width: 360px;
+        height: 310px;
+    }
+
+    .noticia-terciaria{
+        width: 350px;
+        height: 300px;
+    }
+    
+    .noticia-terciaria img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .noticia-terciaria h2{
+        font-size: 1.5rem;
+    }
+    
+    .noticia-terciaria:hover{
+        width: 360px;
+        height: 310px;
+    }
+
+    .propaganda img{
+        width: 350px;
+        height: 519px;
+    }
+
+    .melhor-jogador{
+        width: 350px;
+        height: 172px;
+    }
+    
+    .melhor-jogador img{
+        width: 100%;
+        height: auto;
+    }
+    
+    .melhor-jogador h2{
+        font-size: 2rem;
+    }
+
+    .aposta{
+        width: 350px;
+        height: 260px;
+    }
 }

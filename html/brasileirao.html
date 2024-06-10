@@ -3,11 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="estrutura-padrao.css">
         <link rel="stylesheet" href="css/style.css">
         <title>TalkFut</title>
     </head>
 <body>
     <header>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+        </span>
         <div class="logo">
             <img src="imagens/logo-talkfut.png" alt="Logo da marca TalkFut">
         </div>
@@ -27,7 +32,11 @@
     <section>
         <div class="container1">
             <div class="imagem-neto">
-                <img src="imagens/imagem-neto.png" alt="Imagem do Craque Neto dando entrevista.">
+                <a href="noticia-principal.html">
+                    <source media="(max-width: 550px)" srcset="imagens/imagem-neto-350.png">
+                    <source media="(max-width: 830px)" srcset="imagens/imagem-neto-pq.png">
+                    <img src="imagens/imagem-neto.png" alt="Imagem do Craque Neto dando entrevista.">
+                </a>
                 <h1>Neto antecipa primeiro candidato ao rebaixamento no brasileirão série A</h1>
             </div>
 
@@ -43,11 +52,13 @@
 
         <div class="container2">
             <div class="noticia-secundaria">
+                <source media="(max-width: 550px)" srcset="imagens/imagem-vini-350.png">
                 <img src="imagens/imagem-vini.png" alt="Imagem do jogador Vinicius Júnior reclamando com a arbitragem pós insultos.">
                 <h2>Real Madrid denuncia árbitro por omitir insultos a Vini Jr. em súmula</h2>
             </div>
 
             <div class="noticia-terciaria">
+                <source media="(max-width: 550px)" srcset="imagens/imagem-pedroRaul-350.png">
                 <img src="imagens/imagem-pedroRaul.png" alt="Imagem do jogador Pedro Raul comemorando um gol.">
                 <h2>Pedro Raul passa por harmonização facial; veja antes e depois</h2>
             </div>
@@ -56,6 +67,36 @@
         <aside>
             <div class="resultados-jogos">
                 <h2>Resultados da última rodada do Brasileirão(38)</h2>
+                <div class="jogos">
+                    <img src="imagens/ultimos-jogos/fortaleza-americamg.png" alt="">
+                </div>
+                <div class="jogos">
+                    <img src="imagens/ultimos-jogos/athleticopr-bragantino.png" alt="">
+                </div>
+                <div class="jogos">
+                    <img src="imagens/ultimos-jogos/pal-san.png" alt="">
+                </div>
+                <div class="jogos">
+                    <img src="imagens/ultimos-jogos/grenal.png" alt="">
+                </div>
+                <div class="jogos">
+                    <img src="imagens/ultimos-jogos/coxa-bahia.png" alt="">
+                </div>
+                <div class="jogos">
+                    <img src="imagens/ultimos-jogos/corinthians-flamengo.png" alt="">
+                </div>
+                <div class="jogos">
+                    <img src="imagens/ultimos-jogos/flu-botafogo.png" alt="">
+                </div>
+                <div class="jogos">
+                    <img src="imagens/ultimos-jogos/vasco-sp.png" alt="">
+                </div>
+                <div class="jogos">
+                    <img src="imagens/ultimos-jogos/goias-cuiaba.png" alt="">
+                </div>
+                <div class="jogos">
+                    <img src="imagens/ultimos-jogos/atleticomg-cruzeiro.png" alt="">
+                </div>
             </div>
         </aside>
 
@@ -80,7 +121,13 @@
 
     <div class="container3">
         <div class="melhor-jogador">
-
+            <a href="https://ge.globo.com/futebol/times/atletico-mg/noticia/2024/04/12/artilheiro-do-ultimo-brasileirao-pelo-atletico-mg-paulinho-mira-novos-numeros-se-vier-ficarei-feliz.ghtml" target="_blank">
+                <source media="(max-width: 550px)" srcset="imagens/melhor-jogador-350.png">
+                <source media="(max-width: 830px)" srcset="imagens/melhor-jogador-pq.png">
+                <img src="imagens/melhor-jogador.png" alt="Imagem do melhor jogador da semana">
+            </a>
+            <h2>Melhor jogador da semana</h2>
+            
         </div>
 
         <div class="aposta">
@@ -91,13 +138,13 @@
             <div class="corpo-aposta">
                 <div class="times">
                     <div class="time1">
-                        <img src="imagens/logo-gremio.png" alt="Logo do grêmio">
+                        <img src="imagens/logo-gremio-60.png" alt="Logo do grêmio">
                     </div>
                     <div class="x">
                         <h3>X</h3>
                     </div>
                     <div class="time2">
-                        <img src="imagens/logo-corinthians.png" alt="">
+                        <img src="imagens/logo-corinthians-60.png" alt="">
                     </div>
                 </div>
                 <div class="botao-escolha">
@@ -111,6 +158,13 @@
         </div>
     </div>
 
+    <div class="container-botao-retorno">
+        <a class="transicao-topo" href="brasileirao.html">
+            <button class="botao-retorno" type="button">
+                <p>&#8593</p>
+            </button>
+        </a>
+    </div>
 
     <footer>
         <div class="container4">
@@ -124,17 +178,29 @@
             </section>
 
             <section class="redes-sociais">
-                <div class="redes-esquerda">
-                    <p>Otalkfut</p>
-                    <p>Otalkfut</p>
-                    <p>Otalkfut</p>
-                    <p>Otalkfut</p>
-                </div>
-                <div class="redes-direita">
-                    <p>Otalkfut</p>
-                    <p>Otalkfut</p>
-                    <p>Otalkfut</p>
-                    <p>contatotalkfut@gmail.com</p>
+                <div>
+                    <div>
+                        <a class="insta" href="https://instagram.com/otalkfut" target="_blank">
+                            <img src="imagens/logo-insta-svg.svg" alt="">
+                            <p>Otalkfut</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="insta" href="https://www.tiktok.com/@otalkfut">
+                            <img src="imagens/logo-tiktok-svg.svg" alt="">
+                            <p>Otalkfut</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="insta" href="https://www.youtube.com/@talkfutoficial">
+                            <img src="imagens/logo-youtube-svg.svg" alt="">
+                            <p>Otalkfut</p>
+                        </a>
+                    </div>
+                    <div class="insta">
+                        <img src="imagens/logo-email-svg.png" alt="">
+                        <p>contatotalkfut@gmail.com</p>
+                    </div>
                 </div>
             </section>
 
@@ -143,5 +209,7 @@
             </section>
         </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
