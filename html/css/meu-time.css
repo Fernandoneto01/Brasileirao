@@ -35,8 +35,20 @@ header{
     display: block;
 }
 
+.container-logo{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    margin: 0px 0 0px 37%;
+}
 .logo {
     text-align: center;
+}
+
+.logo-gremio{
+    height: 100px;
+    width: 100px;
+    margin: 0px 20px 50px 0px;
 }
 
 .navbar{
@@ -132,49 +144,118 @@ footer .container4{
     font-family: var(--fonte-escrita);
 }
 
+.container-guerra{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    margin: 45px 0 45px 25%;
+} 
+
+.imagem-guerra h1{
+    background-color: rgba(0, 0, 0, 0.15);
+    color: white;
+    width: 132%;
+    padding: 10px 0px;
+    position: absolute;
+    bottom: 0px;
+    font-size: 2.5rem;
+    font-family: var(--fonte-titulos);
+    text-shadow: 4px 4px 4px black;
+    text-align: center;
+
+}
 
 .imagem-guerra{
+    width: 500px;
+    height: 300px;
+    position: relative;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.n-2{
+    width: 500px;
+    height: 300px;
+    position: relative;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.n-2 img{
+    width: 100%;
+}
+.n-2 h2{
+    background-color: rgba(0, 0, 0, 0.15);
+    color: white;
     width: 100%;
     padding: 10px 0px;
+    position: absolute;
+    bottom: 0px;
+    font-size: 2.5rem;
     font-family: var(--fonte-titulos);
-    font-size: 4.5rem;
-    font-weight: bold;
+    text-shadow: 4px 4px 4px black;
     text-align: center;
-    color: white;
-}
-
-.column{
-    float:left;
-    width: 33.3%;
-    padding: 5px;
-    margin-left: 200px;
-}
-
-* {
-    box-sizing: border-box;
-  }
-
-.row-secund{
-    content: "";
-    clear: both;
-    display: table;
-    height: 350px;
-    width: 100%;
 }
 
 .maicon{
-    width: 300px;
     height: 300px;
-    display: inline-block;
+    width: 500px;
 }
 
-.gremio-treino{
-    display: inline-block;
-    width: 300px;
+.n-3{
+    width: 500px;
     height: 300px;
+    margin-left: 93px;
+    position: relative;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-.container-secundarias{
-    height: 350px;
+.n-3 img{
     width: 100%;
+}
+.n-3 h2{
+    background-color: rgba(0, 0, 0, 0.15);
+    color: white;
+    width: 100%;
+    padding: 10px 0px;
+    position: absolute;
+    bottom: 0px;
+    font-size: 2.5rem;
+    font-family: var(--fonte-titulos);
+    text-shadow: 4px 4px 4px black;
+    text-align: center;
+}
+
+.t-gremio{
+    height: 300px;
+    width: 500px;
+}
+.container-secundarias{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    margin: 45px 0 45px 158px;
+}
+
+.hr{
+    width: 1517.6px;
+    margin-top: 10px ;
+    margin-bottom: 10px;
+}
+
+.container-propaganda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.pub-1{
+    margin: 20px 0;
+    font-family: var(--fonte-titulos);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.topper-pub{
+    margin-bottom: 20px;
 }
