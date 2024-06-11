@@ -73,33 +73,28 @@ div > ul{
 
 .container1 {
     width: 100%;
-    height: 481px;
+    height: auto;
     display: flex;
     justify-content: space-between;
     position: relative;
 }
 
 .imagem-neto{
-    height: 481px;
-    width: 100%;
-    max-width: 904px;
+    height: auto;
+    width: 800px;
     margin-left: 92px;
-    margin-bottom: 100px;
     position: relative;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-.imagem-neto:hover{
-    width: 910px;
-    height: 485px;
-    cursor: pointer;
+.imagem-neto a img{
+    width: 100%;
 }
 
 .imagem-neto h1{
     max-width: 100%;
     padding: 10px 0px;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     background-color: rgba(0, 0, 0, 0.15);
     font-family: var(--fonte-titulos);
     font-size: 4.5rem;
@@ -109,6 +104,11 @@ div > ul{
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.803);
 }
 
+.imagem-neto:hover{
+    width: 810px;
+    height: auto;
+}
+    
 .noticias-laterais{
     width: 309px;
     height: 473px;
