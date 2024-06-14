@@ -66,6 +66,12 @@ div > ul{
     text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.401);
 }
 
+@media (max-width:830px){
+    .navbar{
+        display: none;
+    }
+}
+
 footer {
     height: 230px;
     width: 100%;
