@@ -38,17 +38,29 @@ header{
 .container-logo{
     width: 100%;
     height: 300px;
-    display: flex;
-    margin: 0px 0 0px 37%;
 }
-.logo {
+
+.container-logo .flex{
     text-align: center;
+    justify-content: center;
+   align-items: center; 
+}
+
+.logo1 {
+    text-align: bottom;
+    justify-content: bottom;
+   align-items: bottom; 
+}
+
+.logo2{
+    text-align: center;
+    justify-content: center;
+   align-items: center; 
 }
 
 .logo-gremio{
     height: 100px;
     width: 100px;
-    margin: 0px 20px 50px 0px;
 }
 
 .navbar{
@@ -144,118 +156,210 @@ footer .container4{
     font-family: var(--fonte-escrita);
 }
 
-.container-guerra{
-    width: 100%;
-    height: 400px;
+
+.flex{
     display: flex;
-    margin: 45px 0 45px 25%;
-} 
-
-.imagem-guerra h1{
-    background-color: rgba(0, 0, 0, 0.15);
-    color: white;
-    width: 132%;
-    padding: 10px 0px;
-    position: absolute;
-    bottom: 0px;
-    font-size: 2.5rem;
-    font-family: var(--fonte-titulos);
-    text-shadow: 4px 4px 4px black;
-    text-align: center;
-
 }
 
-.imagem-guerra{
-    width: 500px;
-    height: 300px;
+section.noticias-1 .flex{
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.img-guerra{
+    width: 100%;
+}
+.container-n1{
     position: relative;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-.n-2{
-    width: 500px;
-    height: 300px;
-    position: relative;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+.container-n1:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #007de0;
 }
 
-.n-2 img{
-    width: 100%;
-}
-.n-2 h2{
-    background-color: rgba(0, 0, 0, 0.15);
-    color: white;
-    width: 100%;
-    padding: 10px 0px;
+
+.legenda{
     position: absolute;
-    bottom: 0px;
-    font-size: 2.5rem;
-    font-family: var(--fonte-titulos);
-    text-shadow: 4px 4px 4px black;
-    text-align: center;
+    bottom: 10px;
 }
 
-.maicon{
-    height: 300px;
-    width: 500px;
-}
-
-.n-3{
-    width: 500px;
-    height: 300px;
-    margin-left: 93px;
-    position: relative;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-}
-
-.n-3 img{
-    width: 100%;
-}
-.n-3 h2{
+.legenda h1{
+    margin: 0;
     background-color: rgba(0, 0, 0, 0.15);
-    color: white;
-    width: 100%;
-    padding: 10px 0px;
-    position: absolute;
-    bottom: 0px;
-    font-size: 2.5rem;
     font-family: var(--fonte-titulos);
-    text-shadow: 4px 4px 4px black;
+    font-size: 3.5rem;
+    font-weight: bold;
     text-align: center;
+    color: white;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.803);
 }
 
-.t-gremio{
-    height: 300px;
-    width: 500px;
+.noticia-a img{
+    width: 1056px;
+    height: 576px;
 }
-.container-secundarias{
+
+section.noticias-2{
+    padding: 40px 4%;
+}
+
+.img-maicon{
     width: 100%;
-    height: 300px;
-    display: flex;
-    margin: 45px 0 45px 158px;
 }
+
+section.noticias-2 .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.container-nb{
+    position: relative;
+}
+
+.container-nb:hover{
+        transform: scale(1.05);
+        box-shadow: 0 0 8px #007de0;
+}
+
+.noticia-b img{
+    width: 580px;
+    height: 388px;
+}
+
+.noticia-b .legenda h1{
+    max-width: 580px;
+}
+
+.container-nc{
+    position: relative;
+}
+
+.img-tgremio{
+    width: 100%;
+}
+
+.container-nc:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #007de0;
+}
+
+.noticia-c .legenda h1{
+    max-width: 580px;
+}
+.noticia-c img{
+    width: 580px;
+    height: 388px;
+
+}
+
 
 .hr{
-    width: 1517.6px;
-    margin-top: 10px ;
-    margin-bottom: 10px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-.container-propaganda{
-    display: flex;
-    flex-direction: column;
+.publicidade{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section.topper .flex{
     align-items: center;
-    width: 1200px;
-    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-.pub-1{
-    margin: 20px 0;
-    font-family: var(--fonte-titulos);
-    font-size: 2rem;
+.img-topper{
+    width: 100%;
+}
+
+
+.container-tabela-mt{
+    width: 455px;
+}
+
+.tam-tabela{
+    width: 455px;
+    height: 162px;
+}
+
+.rea{
+    width: 100%;
+}
+section.tabela-video .flex{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    gap: 80px;
+}
+
+.container-tabela-mt{
     text-align: center;
 }
 
-.topper-pub{
-    margin-bottom: 20px;
+.container-tabela-mt h1{
+    font-family: var(--fonte-titulos);
+    font-size: 2.1rem;
+    margin-bottom: 5px;
+}
+
+.container-video-mm{
+    text-align: center;
+}
+
+.container-video-mm h1{
+    font-family: var(--fonte-titulos);
+    font-size: 2.1rem;
+    margin-bottom: 5px;
+}
+
+
+.container-botao-retorno{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.botao-retorno{
+    margin-right: 50px;
+    margin-bottom: 25px;
+    width: 50px;
+    height: 50px;
+    font-size: 3rem;
+    border-radius: 50%;
+    color: white;
+    background-color: var(--verde-principal);
+    border: none;
+}
+
+.botao-retorno:hover{
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    font-size: 3.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1264px){
+    .flex{
+        flex-direction: column;
+    }
+        
+    .container-logo .logo1{
+        display: none;
+    }
+    
+    .img-maicon{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 612px){
+    .menu{
+        display: none;
+    }
+
 }
