@@ -69,6 +69,14 @@ div > ul{
     font-size: 4.1rem;
     text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.401);
 }
+
+.mainnews { /* Nesse campo cuidar com a qualidade da fonte, para não deixar a leitura carregada */
+    width: 309px;
+    font-size: 20pt;
+    font-variant: var(--fonte-escrita);
+
+}
+
 footer {
     height: 230px;
     width: 100%;
