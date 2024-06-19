@@ -465,46 +465,250 @@ footer .container4{
     font-family: var(--fonte-escrita);
 }
 
-@media (max-width: 1350px){
+@media (max-width: 1200px){
+    body{
+        overflow-x: hidden;
+    }
+
     .container1{
         width: 100%;
         height: auto;
     }
 
     .imagem-neto{
-        width: 700px;
+        width: 600px;
         height: auto;
     }
 
     .imagem-neto:hover{
-        width: 710px;
+        width: 610px;
         height: auto;
     }
 
     .imagem-neto h1{
-        font-size: 3rem;
+        font-size: 2.6rem;
     }
 
     .noticias-laterais{
         width: 20%;
+        height: auto;
         right: 0;
         padding-right: 50px;
         font-size: 1.8rem;
     }
 
+    .noticias-laterais li{
+        margin-top: 9px;
+    }
+
     .container2{
         width: 100%;
         height: auto;
+        display: flex;
+        flex-direction: row;
     }
 
     .noticia-secundaria{
-        width: 370px;
+        width: 400px;
+        height: auto;
+    }
+
+    .noticia-secundaria:hover{
+        width: 410px;
         height: auto;
     }
 
     .noticia-terciaria{
-        width: 300px;
+        width: 400px;
         height: auto;
+    }
+
+    .noticia-terciaria:hover{
+        width: 410px;
+        height: auto;
+    }
+
+    .resultados-jogos{
+        position: static;
+        margin: 0 auto;
+    }
+
+    .video-ale{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .video-ale iframe{
+        width: 500px;
+        height: 300px;
+    }
+
+    .video-ale p{
+        margin-bottom: 20px;
+    }
+
+    .container3{
+        width: 100%;
+        height: auto;
+        margin-top: 89px;
+        margin-left: 0;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 61px;
+    }
+
+    .melhor-jogador{
+        width: 450px;
+        height: auto;
+        margin-left: 50px;
+        align-self: center;
+    }
+
+    .melhor-jogador:hover{
+        width: 460px;
+        height: auto;
+    }
+
+    .melhor-jogador h2{
+        position: absolute;
+        font-size: 2.7rem;
+        font-family: var(--fonte-titulos);
+        text-align: center;
+        text-shadow: 4px 4px 4px black;
+    }
+
+    .aposta{
+        margin-top: 25px;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 1050px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .container1{
+        width: 100%;
+        height: auto;
+    }
+
+    .imagem-neto{
+        width: 500px;
+        height: auto;
+    }
+
+    .imagem-neto:hover{
+        width: 510px;
+        height: auto;
+    }
+
+    .imagem-neto h1{
+        font-size: 2.2rem;
+    }
+
+    .noticias-laterais{
+        width: 20%;
+        height: auto;
+        right: 0;
+        padding-right: 50px;
+        font-size: 1.5rem;
+    }
+
+    .noticias-laterais li{
+        margin-top: 8px;
+    }
+
+    .container2{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .noticia-secundaria{
+        width: 450px;
+        height: auto;
+        align-self: center;
+    }
+
+    .noticia-secundaria:hover{
+        width: 460px;
+        height: auto;
+    }
+
+    .noticia-terciaria{
+        width: 450px;
+        height: auto;
+        align-self: center;
+        margin-top: 25px;
+    }
+
+    .noticia-terciaria:hover{
+        width: 460px;
+        height: auto;
+    }
+
+    .resultados-jogos{
+        position: static;
+        margin: 0 auto;
+    }
+
+    .video-ale{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .video-ale iframe{
+        width: 500px;
+        height: 300px;
+    }
+
+    .video-ale p{
+        margin-bottom: 20px;
+    }
+
+    .container3{
+        width: 100%;
+        height: auto;
+        margin-top: 89px;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 61px;
+    }
+
+    .melhor-jogador{
+        width: 500px;
+        height: auto;
+        align-self: center;
+        margin: 20px 0;
+    }
+
+    .melhor-jogador:hover{
+        width: 510px;
+        height: auto;
+    }
+
+    .melhor-jogador h2{
+        position: absolute;
+        font-size: 2.7rem;
+        font-family: var(--fonte-titulos);
+        text-align: center;
+        text-shadow: 4px 4px 4px black;
+    }
+
+    .aposta{
+        align-self: center;
+        margin-top: 25px;
     }
 
 }
@@ -580,7 +784,7 @@ footer .container4{
     }
 
     .noticia-secundaria:hover{
-        width: 380px;
+        width: 460px;
         height: auto;
         cursor: pointer;
     }
@@ -591,7 +795,7 @@ footer .container4{
     }
 
     .noticia-terciaria:hover{
-        width: 310px;
+        width: 460px;
         height: auto;
     }
 
