@@ -111,7 +111,7 @@ div > ul{
     
 .noticias-laterais{
     width: 309px;
-    height: 473px;
+    height: auto;
     position: absolute;
     right: 93px;
     font-size: 2.5rem;
@@ -137,11 +137,10 @@ div > ul{
 }
 
 .container2{
-    width: 100%;
-    max-width: 897px;
-    height: 400px;
+    width: auto;
+    height: auto;
     display: flex;
-    margin: 79px 0 45px 93px;
+    margin: 79px 0 45px 0px;
 }
 
 .noticia-secundaria{
@@ -149,6 +148,7 @@ div > ul{
     height: 400px;
     position: relative;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    margin-left: 93px;
 }
 
 .noticia-secundaria img{
@@ -465,6 +465,50 @@ footer .container4{
     font-family: var(--fonte-escrita);
 }
 
+@media (max-width: 1350px){
+    .container1{
+        width: 100%;
+        height: auto;
+    }
+
+    .imagem-neto{
+        width: 700px;
+        height: auto;
+    }
+
+    .imagem-neto:hover{
+        width: 710px;
+        height: auto;
+    }
+
+    .imagem-neto h1{
+        font-size: 3rem;
+    }
+
+    .noticias-laterais{
+        width: 20%;
+        right: 0;
+        padding-right: 50px;
+        font-size: 1.8rem;
+    }
+
+    .container2{
+        width: 100%;
+        height: auto;
+    }
+
+    .noticia-secundaria{
+        width: 370px;
+        height: auto;
+    }
+
+    .noticia-terciaria{
+        width: 300px;
+        height: auto;
+    }
+
+}
+
 @media (max-width:830px){
     body{
         overflow-x: hidden;
@@ -518,6 +562,8 @@ footer .container4{
         display: block;
         position: static;
         margin: 40px auto;
+        width: 350px;
+        height: auto;
     }
 
     .container2{
@@ -530,11 +576,23 @@ footer .container4{
     .noticia-secundaria{
         align-self: center;
         margin-bottom: 30px;
+        margin-left: 0;
+    }
+
+    .noticia-secundaria:hover{
+        width: 380px;
+        height: auto;
+        cursor: pointer;
     }
 
     .noticia-terciaria{
         margin: 0;
         align-self: center;
+    }
+
+    .noticia-terciaria:hover{
+        width: 310px;
+        height: auto;
     }
 
     .resultados-jogos{
@@ -653,12 +711,14 @@ footer .container4{
 
     .noticias-laterais{
        font-size: 1.8rem;
+       width: 350px;
        height: auto;
     }
 
     .noticia-secundaria{
         width: 350px;
         height: 300px;
+        margin: auto;
     }
 
     .noticia-secundaria h2{
@@ -673,6 +733,7 @@ footer .container4{
     .noticia-terciaria{
         width: 350px;
         height: 300px;
+        margin-top: 25px;
     }
     
     .noticia-terciaria img{
