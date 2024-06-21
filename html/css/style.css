@@ -137,14 +137,15 @@ div > ul{
 }
 
 .container2{
-    width: auto;
-    height: auto;
+    width: 100%;
+    max-width: 1300px;
+    height: 500px;
     display: flex;
-    margin: 79px 0 45px 0px;
+    margin: 79px auto 45px auto;
 }
 
 .noticia-secundaria{
-    width: 466px;
+    width: 400px;
     height: 400px;
     position: relative;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
@@ -170,8 +171,8 @@ div > ul{
 }
 
 .noticia-secundaria:hover{
-    width: 470px;
-    height: 402px;
+    width: 410px;
+    height: 400px;
     cursor: pointer;
 }
 
@@ -210,11 +211,10 @@ div > ul{
 .resultados-jogos{
     width: 309px;
     height: 901px;
-    position: absolute;
-    left: 1118px;
-    top: 940px;
     font-family: var(--fonte-titulos);
     font-size: 2.1rem;
+    margin-left: 67px;
+    margin-right: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -230,6 +230,10 @@ div > ul{
 .video-ale{
     margin-left: 164px;
     margin-bottom: 100px;
+}
+
+.video-ale iframe{
+    width: 700px;
 }
 
 .video-ale p {
@@ -251,6 +255,7 @@ div > ul{
     flex-direction: column;
     align-items: center;
     width: 100%;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -261,18 +266,18 @@ div > ul{
 }
 
 .container3{
-    width: 1261px;
+    width: 100%;
+    max-width: 1300px;
     height: 350px;
-    margin-top: 89px;
-    margin-left: 93px;
+    margin: 89px auto 61px auto;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 61px;
 }
 
 .melhor-jogador{
     width: 710px;
     height: 350px;
+    margin-left: 15px;
     background-color: azure;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
     position: relative;
@@ -299,6 +304,7 @@ div > ul{
 .aposta{
     width: 385px;
     height: 297px;
+    margin-right: 15px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -505,12 +511,13 @@ footer .container4{
         width: 100%;
         height: auto;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .noticia-secundaria{
         width: 400px;
         height: auto;
+        margin: 0 auto 35px auto;
     }
 
     .noticia-secundaria:hover{
@@ -521,6 +528,7 @@ footer .container4{
     .noticia-terciaria{
         width: 400px;
         height: auto;
+        margin: 0 auto 35px auto;
     }
 
     .noticia-terciaria:hover{
@@ -613,14 +621,18 @@ footer .container4{
     }
 
     .noticias-laterais{
-        width: 100px;
+        width: 110px;
         height: auto;
         padding-right: 50px;
-        font-size: 1.2rem;
+    }
+
+    .noticias-laterais h2{
+        font-size: 1.5rem
     }
 
     .noticias-laterais li{
         margin-top: 8px;
+        font-size: 1.3rem;
     }
 
     .container2{
@@ -769,6 +781,7 @@ footer .container4{
         margin: 40px auto;
         width: 350px;
         height: auto;
+        font-size: 1.8rem;
     }
 
     .container2{
@@ -781,7 +794,7 @@ footer .container4{
     .noticia-secundaria{
         align-self: center;
         margin-bottom: 30px;
-        margin-left: 0;
+        margin: 0 auto 35px auto;
     }
 
     .noticia-secundaria:hover{
