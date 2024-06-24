@@ -14,15 +14,21 @@
 .container-geral{
     width: 100%;
     height: auto;
-    background-color: gray;
+    background-color: var(--cinza-fundo);
     margin-top: -72px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .conteudo{
     width: 1200px;
     margin: 0 auto;
-    background-color: green;
+    background-color: var(--verde-principal);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
 }
 
 .conteudo h1{
@@ -30,6 +36,9 @@
     font-size: 40px;
     text-align: center;
     padding: 25px;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.403);
+
 }
 
 .conteudo p{
@@ -37,4 +46,67 @@
     font-size: 25px;
     text-align: justify;
     padding: 0px 15px;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.19)
+}
+
+.container-geral h2{
+    font-family: var(--fonte-titulos);
+    font-size: 3.5rem;
+    background-color: var(--verde-principal);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.403);
+    margin-bottom: 25px;
+}
+
+.parceiros{
+    width: 1200px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card1 img, .card2 img, .card3 img, .card4 img{
+    width: 100%;
+    height: 150px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.292);
+}
+
+.card1 img:hover, .card2 img:hover, .card3 img:hover, .card4 img:hover{
+    box-shadow: 4px 4px 4px var(--verde-principal);
+}
+
+.nomes{
+    font-family: var(--fonte-escrita);
+    font-size: 2.2rem;
+    background-color: rgba(0, 0, 0, 0.319);
+    border-radius: 10px;
+    color:white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.403);
+    margin: 5px;
+    padding: 10px;
+}
+
+.funcao{
+    font-family: var(--fonte-escrita);
+    font-size: 1.8rem;
+    background-color: var(--verde-principal);
+    border-radius: 10px;
+    color:white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.403);
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.descricao{
+    font-family: var(--fonte-escrita);
+    font-size: 1.3rem;
+    background-color: rgba(0, 0, 0, 0.319);
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
 }

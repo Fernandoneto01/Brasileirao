@@ -27,6 +27,7 @@ a{
 
 body{
     background-color: var(--cinza-fundo);
+    overflow-x: hidden;
 }
 
 header{
