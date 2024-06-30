@@ -10,24 +10,34 @@
 
 <body>
 <header>
-    
-    <div class="logo"> <!-- Lembrar que nesse campo sera acrescido as interacoes para login e procura -->
-        <img src="imagens/logo-talkfut.png" alt="Logo da marca TalkFut">
-    </div>
-</header>
+    <header>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+        </span>
+        <div class="logo">
+            <img src="imagens/logo-talkfut.png" alt="Logo da marca TalkFut">
+        </div>
+        <div class="cadastro">
+            <div>
+                <a href="login.html">
+                    <img src="imagens/imagens-home/cadastro.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
 
-<nav>
-    <div class="navbar">
-        <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tabela.html">Tabela</a></li>
-            <li><a href="shorts.html">Shorts</a></li>
-            <li><a href="meuTime.html">Meu Time</a></li>
-        </ul>
-    </div>
-</nav>
+    <nav>
+        <div id="menuList" class="navbar">
+            <ul id="menuList" class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tabela.html">Tabela</a></li>
+                <li><a href="shorts.html">Shorts</a></li>
+                <li><a href="meuTime.html">Meu Time</a></li>
+            </ul>
+        </div>
+    </nav>
 </header>
-<div class="containerpadrao"><!-- Nesse campo colocarei as informações de titulo e informações da noticia -->
+<div><!-- Nesse campo colocarei as informações de titulo e informações da noticia -->
 
     <h1 class="tituloprincipal">Neto antecipa primeiro candidato ao rebaixamento no Brasileirão Série A</h1>
         <h2>Apresentador da Band repercute cenário atual e
@@ -44,7 +54,7 @@
 <div>
     <div class="containerimg">
 
-        <img src="imagens/imagem-neto.png" alt="Craque Neto Noticia" class="imgcontainer">
+        <img src="imagens/imagens-home/imagem-neto.png" alt="Craque Neto Noticia" class="imgcontainer">
 
 
     </div>
@@ -52,6 +62,10 @@
 <hr> <!--barra de separação está-->
 
 <h3 class="publicidade">PUBLICIDADE</h3>
+<div class="containerpadrao">
+    <img src="imagens/leia-mais/Captura de tela 2024-03-18 213704.png" alt="">
+</div>
+<hr>
 <div class="containertext">
         <p class="maintext">
         Competição das mais equilibradas em território nacional,
@@ -70,7 +84,12 @@
 <hr>
 <h3 class="publicidade">PUBLICIDADE</h3>
 
-<p class="maintext">
+<div class="containerpadrao">
+    <img src="imagens/leia-mais/Captura de tela 2024-03-24 162914.png" alt="">
+</div>
+<hr>
+
+    <p class="maintext">
     Na temporada passada, o Vasco lutou contra o rebaixamento até a última rodada. Na disputa
     com Santos e Bahia, a equipe carioca precisava vencer o Red Bull Bragantino para sacramentar
     sua permanência na elite do futebol brasileiro. Nos minutos finais, os donos da casa marcaram
@@ -87,6 +106,12 @@
 <hr>
 <h3 class="publicidade">PUBLICIDADE</h3>
 
+<div class="containerpadrao">
+    <img src="imagens/leia-mais/Captura de tela 2024-06-23 185012.png" alt="">
+
+</div>
+<hr>
+
     <h1 class="titulosecundario">Neto crava campeão do Brasileirão Série A 2024</h1>
 <p class=" maintext">Famoso por se manifestar diariamente de forma convicta, Neto, no Os Donos da Bola, garantiu ter
     uma equipe com todas as condições, por exemplo, de conquistar o título do Brasileirão Série A: Flamengo. <br>
@@ -97,8 +122,29 @@
 
 <h2>LEIA MAIS</h2>
 
-    
+<div class="containerleiamais">
+    <img src="imagens/leia-mais/imagensleia/test1.png" alt="">
+    <p class="textleiamais">Hugo Souza, do Flamengo, chega na noite 
+        deste domingo a São Paulo para assinar com o Corinthians.
+    </p>
+</div>
+<hr>
+<div class="containerleiamais">
+    <img src="imagens/leia-mais/imagensleia/test2.png" alt="">
+    <p class="textleiamais">Luciano recebe terceiro cartão amarelo 
+        e vira desfalque no São Paulo.
+    </p>
 
+</div>
+<hr>
+<div class="containerleiamais">
+    <img src="imagens/leia-mais/imagensleia/test3.png" alt="">
+    <p class="textleiamais">Fluminense iguala sua pior sequência 
+        de derrotas na história do Brasileirão
+    </p>
+
+</div>
+<hr>
 <footer>
     <div class="container4">
         <section class="sobre">
@@ -143,5 +189,6 @@
         </section>
     </div>
 </footer>
+<script src="js/script.js"></script>
 </body>
 </html>

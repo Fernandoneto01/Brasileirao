@@ -2,12 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
 :root{
     --verde-principal: #00B925;
     --cinza-fundo: #d9d9d9;
@@ -31,24 +25,31 @@ a{
 
 body{
     background-color: var(--cinza-fundo);
-}
-.container1{
-    width: 100%;
-    max-width: 1300px;
-    height: auto;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+    overflow-x: hidden;
 }
 
 header{
     height: 215px;
     background-color: var(--verde-principal);
     display: block;
+    position: relative;
+}
+
+.cadastro{
+    display: flex;
+    justify-content: flex-end;
+    position: inherit;
+}
+
+.cadastro div img{
+    width: 30px;
+    height: auto;
+    margin-right: 15px;
 }
 
 .logo {
     text-align: center;
+    height: 170px;
 }
 
 .navbar{
@@ -77,6 +78,15 @@ div > ul{
     font-size: 4.1rem;
     text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.401);
 }
+
+#burguer{
+    display: none;
+}
+
+.menu a:hover {
+    font-size: 4.1rem;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.401);
+}
 .tituloprincipal{
     font-size: 40pt;
     font-variant: var(--fonte-titulos);
@@ -89,6 +99,20 @@ div > ul{
 }
 .containerpadrao{
     text-align: center;
+}
+.containerleiamais{
+    width: 60%;
+    max-width: 1300px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.textleiamais{
+    font-size: 20pt;
+    font-variant: var(--fonte-titulos);
+    margin-left: 20px;
 }
 .titulosecundario{
     font-size: 25pt;
@@ -219,10 +243,25 @@ footer .container4{
         font-size: 20pt;
     }
     .imgcontainer{
-        width: 100%;
+        width: 90%;
         height: auto;
         flex-direction: column;
         margin: 0 auto;
+    }
+    .containerleiamais{
+        width: 70%;
+        height: auto;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .textleiamais{
+        width: 340px;
+        height: auto;
+        margin: auto;
+        font-size: 14pt;
+        margin-bottom: 10px;
+        margin-top: 20px;
+
     }
     h1{
         width: 350px;
@@ -237,7 +276,6 @@ footer .container4{
         font-size: 20pt;
         margin-bottom: 10px;
         margin-top: 20px;
-
     }
     h2{
         width: 350px;
@@ -250,10 +288,15 @@ footer .container4{
         width: 350px;
         height: 1px;
         margin-top: 10px;
-        
-
-
+        margin-bottom: 10px;
     }
+    .containerpadrao{
+        max-width: 100%;
+        height: auto;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    
     .mainnews{
         min-width: 10%;
         height: auto;
@@ -271,7 +314,7 @@ footer .container4{
         margin-bottom: 10px;
     }
     footer .container4{
-        margin-top: 350px;
+        margin-top: 50px;
         flex-direction: column-reverse;
         align-items: center;
     }
