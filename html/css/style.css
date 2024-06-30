@@ -37,8 +37,21 @@ header{
     position: relative;
 }
 
+.cadastro{
+    display: flex;
+    justify-content: flex-end;
+    position: inherit;
+}
+
+.cadastro div img{
+    width: 30px;
+    height: auto;
+    margin-right: 15px;
+}
+
 .logo {
     text-align: center;
+    height: 170px;
 }
 
 .navbar{

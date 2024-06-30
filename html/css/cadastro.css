@@ -34,14 +34,15 @@ body{
 }
 
 .conteudo{
-    height: 100vh;
+    height: auto;
+    margin: 25px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.tela-login{
+.tela-cadastro{
     background-color: #d9d9d9;
     width: 20%;
     height: auto;
@@ -49,7 +50,7 @@ body{
     border-radius: 10px;
 }
 
-.tela-login h2{
+.tela-cadastro h2{
     font-family: var(--fonte-titulos);
     font-size: 2.6em;
     margin: 15px 20px;
@@ -77,9 +78,11 @@ label{
     margin-bottom: 15px;
 }
 
-.botao-login{
-    padding: 5px;
+.forms p{
+    width: 100%;
+    height: auto;
     font-family: var(--fonte-escrita);
+    font-size: 1.4em;
 }
 
 .forms a{
@@ -96,20 +99,18 @@ label{
     color: black;
 }
 
-.forms p{
-    width: 100%;
-    height: auto;
-    font-family: var(--fonte-escrita);
-    font-size: 1.4em;
-}
-
 .dropdown-menu{
     padding-bottom: 15px;
 }
 
-@media (max-width:1200px){
-    .tela-login{
-        width: 240px;
+.botao-cadastro{
+    padding: 5px;
+    font-family: var(--fonte-escrita);
+}
+
+@media (max-width:1300px){
+    .tela-cadastro{
+        width: 250px;
         height: auto;
     }
 }
@@ -163,4 +164,3 @@ label{
         margin-bottom: 30px;
     }
 }
-
