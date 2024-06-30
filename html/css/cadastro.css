@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --verde-principal: #00B925;
+    --cinza-fundo: #d9d9d9;
+    --fonte-titulos: "Montserrat", sans-serif;
+    --fonte-escrita: "Roboto", sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-size: 10px;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--cinza-fundo);
+}
+
+#burguer{
+    display: none;
+}
+
+.conteudo{
+    height: auto;
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tela-cadastro{
+    background-color: #d9d9d9;
+    width: 20%;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.133);
+    border-radius: 10px;
+}
+
+.tela-cadastro h2{
+    font-family: var(--fonte-titulos);
+    font-size: 2.6em;
+    margin: 15px 20px;
+}
+
+.forms{
+    width: 92%;
+    height: auto;
+    margin: 0 auto;
+}
+
+label{
+    font-family: var(--fonte-escrita);
+    font-size: 1.6em;
+}
+
+.form-control{
+    width: 95%;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.558);
+    border-radius: 2px;
+}
+
+.espaco{
+    margin-bottom: 15px;
+}
+
+.forms p{
+    width: 100%;
+    height: auto;
+    font-family: var(--fonte-escrita);
+    font-size: 1.4em;
+}
+
+.forms a{
+    color: black;
+    font-family: var(--fonte-escrita);
+    font-size: 1.3em;
+}
+
+.forms a:hover{
+    color: var(--verde-principal);
+}
+
+.forms button a:hover{
+    color: black;
+}
+
+.dropdown-menu{
+    padding-bottom: 15px;
+}
+
+.botao-cadastro{
+    padding: 5px;
+    font-family: var(--fonte-escrita);
+}
+
+@media (max-width:1300px){
+    .tela-cadastro{
+        width: 250px;
+        height: auto;
+    }
+}
+
+@media (max-width: 830px){
+
+    footer{
+        height: auto;
+    }
+
+    footer .container4{
+        flex-direction: column-reverse;
+        align-items: center;
+        height: auto;
+    }
+
+    .container4 .sobre{
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+
+    .sobre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
+
+    .container4 ul li{
+        margin-left: 18px;
+        line-height: 1.5em;
+        font-family: var(--fonte-escrita);
+    }
+
+    .redes-sociais{
+        justify-content: center;
+    }
+
+    .redes-sociais p{
+        display: none;
+        margin-bottom: 15px;
+    }
+
+    .copyright{
+        margin-bottom: 30px;
+    }
+}

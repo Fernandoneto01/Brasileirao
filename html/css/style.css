@@ -27,6 +27,7 @@ a{
 
 body{
     background-color: var(--cinza-fundo);
+    overflow-x: hidden;
 }
 
 header{
@@ -36,8 +37,21 @@ header{
     position: relative;
 }
 
+.cadastro{
+    display: flex;
+    justify-content: flex-end;
+    position: inherit;
+}
+
+.cadastro div img{
+    width: 30px;
+    height: auto;
+    margin-right: 15px;
+}
+
 .logo {
     text-align: center;
+    height: 170px;
 }
 
 .navbar{
@@ -73,48 +87,48 @@ div > ul{
 
 .container1 {
     width: 100%;
-    height: 481px;
+    max-width: 1300px;
+    height: auto;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    position: relative;
 }
 
 .imagem-neto{
-    height: 481px;
-    width: 100%;
-    max-width: 904px;
+    width: 700px;
+    height: auto;
     margin-left: 92px;
-    margin-bottom: 100px;
     position: relative;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-.imagem-neto:hover{
-    width: 910px;
-    height: 485px;
-    cursor: pointer;
+.imagem-neto a img{
+    width: 100%;
 }
 
 .imagem-neto h1{
     max-width: 100%;
     padding: 10px 0px;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     background-color: rgba(0, 0, 0, 0.15);
     font-family: var(--fonte-titulos);
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     font-weight: bold;
     text-align: center;
     color: white;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.803);
 }
 
+.imagem-neto:hover{
+    width: 710px;
+    height: auto;
+}
+    
 .noticias-laterais{
     width: 309px;
-    height: 473px;
-    position: absolute;
-    right: 93px;
-    font-size: 2.5rem;
+    height: auto;
+    margin-right: 60px;
+    font-size: 2rem;
 }
 
 .noticias-laterais>h2{
@@ -138,17 +152,18 @@ div > ul{
 
 .container2{
     width: 100%;
-    max-width: 897px;
-    height: 400px;
+    max-width: 1300px;
+    height: 500px;
     display: flex;
-    margin: 79px 0 45px 93px;
+    margin: 79px auto 45px auto;
 }
 
 .noticia-secundaria{
-    width: 466px;
+    width: 400px;
     height: 400px;
     position: relative;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    margin-left: 93px;
 }
 
 .noticia-secundaria img{
@@ -170,8 +185,8 @@ div > ul{
 }
 
 .noticia-secundaria:hover{
-    width: 470px;
-    height: 402px;
+    width: 410px;
+    height: 400px;
     cursor: pointer;
 }
 
@@ -210,11 +225,10 @@ div > ul{
 .resultados-jogos{
     width: 309px;
     height: 901px;
-    position: absolute;
-    left: 1118px;
-    top: 940px;
     font-family: var(--fonte-titulos);
     font-size: 2.1rem;
+    margin-left: 67px;
+    margin-right: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -230,6 +244,10 @@ div > ul{
 .video-ale{
     margin-left: 164px;
     margin-bottom: 100px;
+}
+
+.video-ale iframe{
+    width: 700px;
 }
 
 .video-ale p {
@@ -251,6 +269,7 @@ div > ul{
     flex-direction: column;
     align-items: center;
     width: 100%;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -261,18 +280,18 @@ div > ul{
 }
 
 .container3{
-    width: 1261px;
+    width: 100%;
+    max-width: 1300px;
     height: 350px;
-    margin-top: 89px;
-    margin-left: 93px;
+    margin: 89px auto 61px auto;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 61px;
 }
 
 .melhor-jogador{
     width: 710px;
     height: 350px;
+    margin-left: 15px;
     background-color: azure;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
     position: relative;
@@ -299,6 +318,7 @@ div > ul{
 .aposta{
     width: 385px;
     height: 297px;
+    margin-right: 15px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -465,6 +485,259 @@ footer .container4{
     font-family: var(--fonte-escrita);
 }
 
+@media (max-width: 1200px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .container1{
+        width: 100%;
+        height: 319px;
+    }
+
+    .imagem-neto{
+        width: 600px;
+        height: auto;
+    }
+
+    .imagem-neto:hover{
+        width: 610px;
+        height: auto;
+    }
+
+    .imagem-neto h1{
+        font-size: 2.6rem;
+    }
+
+    .noticias-laterais{
+        width: 20%;
+        height: auto;
+        right: 0;
+        padding-right: 50px;
+        font-size: 1.8rem;
+    }
+
+    .noticias-laterais li{
+        margin-top: 9px;
+    }
+
+    .container2{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .noticia-secundaria{
+        width: 400px;
+        height: auto;
+        margin: 0 auto 35px auto;
+    }
+
+    .noticia-secundaria:hover{
+        width: 410px;
+        height: auto;
+    }
+
+    .noticia-terciaria{
+        width: 400px;
+        height: auto;
+        margin: 0 auto 35px auto;
+    }
+
+    .noticia-terciaria:hover{
+        width: 410px;
+        height: auto;
+    }
+
+    .resultados-jogos{
+        position: static;
+        margin: 0 auto;
+    }
+
+    .video-ale{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .video-ale iframe{
+        width: 500px;
+        height: 300px;
+    }
+
+    .video-ale p{
+        margin-bottom: 20px;
+    }
+
+    .container3{
+        width: 100%;
+        height: auto;
+        margin-top: 89px;
+        margin-left: 0;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 61px;
+    }
+
+    .melhor-jogador{
+        width: 450px;
+        height: auto;
+        margin-left: 50px;
+        align-self: center;
+    }
+
+    .melhor-jogador:hover{
+        width: 460px;
+        height: auto;
+    }
+
+    .melhor-jogador h2{
+        position: absolute;
+        font-size: 2.7rem;
+        font-family: var(--fonte-titulos);
+        text-align: center;
+        text-shadow: 4px 4px 4px black;
+    }
+
+    .aposta{
+        margin-top: 25px;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 1050px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .container1{
+        width: 100%;
+        max-width: 900px;
+        height: 266px;
+    }
+
+    .imagem-neto{
+        width: 500px;
+        height: auto;
+    }
+
+    .imagem-neto:hover{
+        width: 502px;
+        height: auto;
+    }
+
+    .imagem-neto > h1{
+        font-size: 2.2rem;
+    }
+
+    .noticias-laterais{
+        width: 110px;
+        height: auto;
+        padding-right: 50px;
+    }
+
+    .noticias-laterais h2{
+        font-size: 1.5rem
+    }
+
+    .noticias-laterais li{
+        margin-top: 8px;
+        font-size: 1.3rem;
+    }
+
+    .container2{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .noticia-secundaria{
+        width: 450px;
+        height: auto;
+        align-self: center;
+    }
+
+    .noticia-secundaria:hover{
+        width: 460px;
+        height: auto;
+    }
+
+    .noticia-terciaria{
+        width: 450px;
+        height: auto;
+        align-self: center;
+        margin-top: 25px;
+    }
+
+    .noticia-terciaria:hover{
+        width: 460px;
+        height: auto;
+    }
+
+    .resultados-jogos{
+        position: static;
+        margin: 0 auto;
+    }
+
+    .video-ale{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .video-ale iframe{
+        width: 500px;
+        height: 300px;
+    }
+
+    .video-ale p{
+        margin-bottom: 20px;
+    }
+
+    .container3{
+        width: 100%;
+        height: auto;
+        margin-top: 89px;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 61px;
+    }
+
+    .melhor-jogador{
+        width: 500px;
+        height: auto;
+        align-self: center;
+        margin: 20px 0;
+    }
+
+    .melhor-jogador:hover{
+        width: 510px;
+        height: auto;
+    }
+
+    .melhor-jogador h2{
+        position: absolute;
+        font-size: 2.7rem;
+        font-family: var(--fonte-titulos);
+        text-align: center;
+        text-shadow: 4px 4px 4px black;
+    }
+
+    .aposta{
+        margin: 0 auto;
+    }
+
+}
+
 @media (max-width:830px){
     body{
         overflow-x: hidden;
@@ -477,9 +750,18 @@ footer .container4{
         left: 20px;
         color: white;
     }
+    
+    #burguer:hover{
+        cursor: pointer;
+    }
 
     .navbar{
         display: none;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
     }
 
     .container1{
@@ -512,12 +794,17 @@ footer .container4{
 
     .imagem-neto h1{
         font-size: 2rem;
+        position: absolute;
+        bottom: 0;
     }
 
     .noticias-laterais{
         display: block;
         position: static;
         margin: 40px auto;
+        width: 350px;
+        height: auto;
+        font-size: 1.8rem;
     }
 
     .container2{
@@ -530,11 +817,23 @@ footer .container4{
     .noticia-secundaria{
         align-self: center;
         margin-bottom: 30px;
+        margin: 0 auto 35px auto;
+    }
+
+    .noticia-secundaria:hover{
+        width: 460px;
+        height: auto;
+        cursor: pointer;
     }
 
     .noticia-terciaria{
         margin: 0;
         align-self: center;
+    }
+
+    .noticia-terciaria:hover{
+        width: 460px;
+        height: auto;
     }
 
     .resultados-jogos{
@@ -575,7 +874,12 @@ footer .container4{
         width: 450px;
         height: auto;
         align-self: center;
-        margin: 20px 0;
+        margin: 25px 0;
+    }
+
+    .melhor-jogador:hover{
+        width: 460px;
+        height: auto;
     }
 
     .melhor-jogador h2{
@@ -587,8 +891,7 @@ footer .container4{
     }
 
     .aposta{
-        align-self: center;
-        margin-top: 25px;
+        margin: 0 auto;
     }
 
     footer .container4{
@@ -653,12 +956,14 @@ footer .container4{
 
     .noticias-laterais{
        font-size: 1.8rem;
+       width: 350px;
        height: auto;
     }
 
     .noticia-secundaria{
         width: 350px;
         height: 300px;
+        margin: auto;
     }
 
     .noticia-secundaria h2{
@@ -673,6 +978,7 @@ footer .container4{
     .noticia-terciaria{
         width: 350px;
         height: 300px;
+        margin-top: 25px;
     }
     
     .noticia-terciaria img{
@@ -697,6 +1003,11 @@ footer .container4{
     .melhor-jogador{
         width: 350px;
         height: 172px;
+    }
+
+    .melhor-jogador:hover{
+        width: 360px;
+        height: auto;
     }
     
     .melhor-jogador img{
