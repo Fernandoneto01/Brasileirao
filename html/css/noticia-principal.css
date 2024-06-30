@@ -32,6 +32,14 @@ a{
 body{
     background-color: var(--cinza-fundo);
 }
+.container1{
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
 
 header{
     height: 215px;
@@ -69,16 +77,80 @@ div > ul{
     font-size: 4.1rem;
     text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.401);
 }
+.tituloprincipal{
+    font-size: 40pt;
+    font-variant: var(--fonte-titulos);
+    margin-left: 270px;
+    margin-right: 350px;
+    margin-bottom: 50px;
+    text-align: justify;
+    text-align: center;
 
-.mainnews { /* Nesse campo cuidar com a qualidade da fonte, para não deixar a leitura carregada */
-    width: 309px;
+}
+.containerpadrao{
+    text-align: center;
+}
+.titulosecundario{
+    font-size: 25pt;
+    font-variant: var(--fonte-titulos);
+    margin-left: 270px;
+    margin-right: 350px;
+    margin-bottom: 20px;
+    text-align: justify;
+    text-align: center;
+}
+
+h2{
+    font-variant: var(--fonte-titulos);
+    margin: 0 auto;
+    text-align: justify;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.publicidade{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+hr{
+    margin: auto;
+    width: 900px;
+    height: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+
+}
+.containerimg{
+    text-align: center;
+
+}
+.imgcontainer{
+    display: block;
+    margin: 0 auto;
+
+}
+.containertext{
+    text-align: center;
+}
+.maintext{
+
+    width: 910px;
     font-size: 20pt;
     font-variant: var(--fonte-escrita);
+    margin: 0 auto;
+    text-align: justify;
+    margin-bottom: 20px;
+
 
 }
 
 footer {
-    height: 230px;
+    height: auto;
     width: 100%;
     background-color: var(--verde-principal);
     color: white;
@@ -86,14 +158,14 @@ footer {
 
 footer .container4{
     width: 100%;
-    padding-top: 30px;
+    padding:30px 3px 0px 3px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
 .container4 .sobre{
-    width: 180px;
+    width: auto;
     font-size: x-large;
 }
 
@@ -105,24 +177,129 @@ footer .container4{
 
 .container4 h3{
     margin-bottom: 10px;
+    font-family: var(--fonte-titulos);
 }
 
 .container4 ul li{
     margin-left: 18px;
     line-height: 1.5em;
+    font-family: var(--fonte-escrita);
 }
 
 .redes-sociais{
-    width: 400px;
     font-size: x-large;
-    display: flex;
-    justify-content: space-between;
     line-height: 1.8em;
+    font-family: var(--fonte-escrita);
+}
+
+.insta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.youtube{
+    display: flex;
+    flex-direction: row;
 }
 
 .copyright{
-    height: 120px;
+    height: auto;
     font-size: large;
     width: 350px;
     margin-top: 20px;
+    font-family: var(--fonte-escrita);
+}
+@media (max-width:550px){
+    
+    .tituloprincipal{
+        width: 350px;
+        height: 125px;
+        margin: auto;
+        font-size: 20pt;
+    }
+    .imgcontainer{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    h1{
+        width: 350px;
+        height: 125px;
+        margin: auto;
+        font-size: 20pt;
+    }
+    .titulosecundario{
+        width: 350px;
+        height: 125px;
+        margin: auto;
+        font-size: 20pt;
+        margin-bottom: 10px;
+        margin-top: 20px;
+
+    }
+    h2{
+        width: 350px;
+        height: 50px;
+        margin: auto;
+        margin-top: 10px;
+    }
+    hr{
+        margin: auto;
+        width: 350px;
+        height: 1px;
+        margin-top: 10px;
+        
+
+
+    }
+    .mainnews{
+        min-width: 10%;
+        height: auto;
+        display: block;
+    }
+    .publicidade{
+
+    }
+    .maintext{
+        width: 350px;
+        height: auto;
+        margin: auto;
+        font-size: 15px;  
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    footer .container4{
+        margin-top: 350px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .container4 .sobre{
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+
+    .sobre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
+
+    .redes-sociais p{
+        display: none;
+        margin-bottom: 15px;
+    }
+
+    .copyright{
+        margin-bottom: 30px;
+    }
+
 }
