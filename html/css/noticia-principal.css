@@ -237,11 +237,36 @@ footer .container4{
 }
 @media (max-width:550px){
     
+    body{
+        overflow-x: hidden;
+    }
+
+    #burguer{
+        display: block;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color: white;
+    }
+    
+    #burguer:hover{
+        cursor: pointer;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
     .tituloprincipal{
         width: 350px;
         height: 125px;
         margin: auto;
         font-size: 20pt;
+        margin-top: 20px;
     }
     .imgcontainer{
         width: 90%;
