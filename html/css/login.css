@@ -11,38 +11,110 @@
     --fonte-escrita: "Roboto", sans-serif;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-size: 10px;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--cinza-fundo);
+}
+
+#burguer{
+    display: none;
+}
+
+.conteudo{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tela-login{
     background-color: #d9d9d9;
-    gap: 15px;
-}
-
-.grid-item {
-    margin: 0px 15px 100px 15px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    width: 20%;
     height: auto;
-    font-size: 30px;
-    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.133);
+    border-radius: 10px;
 }
 
-@media (max-width: 1200px){
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        background-color: #d9d9d9;
-        gap: 15px;
+.tela-login h2{
+    font-family: var(--fonte-titulos);
+    font-size: 2.6em;
+    margin: 15px 20px;
+}
+
+.forms{
+    width: 92%;
+    height: auto;
+    margin: 0 auto;
+}
+
+label{
+    font-family: var(--fonte-escrita);
+    font-size: 1.6em;
+}
+
+.form-control{
+    width: 95%;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.558);
+    border-radius: 2px;
+}
+
+.espaco{
+    margin-bottom: 15px;
+}
+
+.botao-login{
+    padding: 5px;
+    font-family: var(--fonte-escrita);
+}
+
+.forms a{
+    color: black;
+    font-family: var(--fonte-escrita);
+    font-size: 1.3em;
+}
+
+.forms a:hover{
+    color: var(--verde-principal);
+}
+
+.forms button a:hover{
+    color: black;
+}
+
+.forms p{
+    width: 100%;
+    height: auto;
+    font-family: var(--fonte-escrita);
+    font-size: 1.4em;
+}
+
+.dropdown-menu{
+    padding-bottom: 15px;
+}
+
+@media (max-width:1200px){
+    .tela-login{
+        width: 240px;
+        height: auto;
     }
 }
 
-@media (max-width: 840px){
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        background-color: #d9d9d9;
-        gap: 15px;
-    }
+@media (max-width: 830px){
 
     footer{
         height: auto;
@@ -91,3 +163,4 @@
         margin-bottom: 30px;
     }
 }
+
