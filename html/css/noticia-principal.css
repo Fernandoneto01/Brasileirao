@@ -2,12 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
 :root{
     --verde-principal: #00B925;
     --cinza-fundo: #d9d9d9;
@@ -31,16 +25,31 @@ a{
 
 body{
     background-color: var(--cinza-fundo);
+    overflow-x: hidden;
 }
 
 header{
     height: 215px;
     background-color: var(--verde-principal);
     display: block;
+    position: relative;
+}
+
+.cadastro{
+    display: flex;
+    justify-content: flex-end;
+    position: inherit;
+}
+
+.cadastro div img{
+    width: 30px;
+    height: auto;
+    margin-right: 15px;
 }
 
 .logo {
     text-align: center;
+    height: 170px;
 }
 
 .navbar{
@@ -70,15 +79,103 @@ div > ul{
     text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.401);
 }
 
-.mainnews { /* Nesse campo cuidar com a qualidade da fonte, para não deixar a leitura carregada */
-    width: 309px;
+#burguer{
+    display: none;
+}
+
+.menu a:hover {
+    font-size: 4.1rem;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.401);
+}
+.tituloprincipal{
+    font-size: 40pt;
+    font-variant: var(--fonte-titulos);
+    margin-left: 270px;
+    margin-right: 350px;
+    margin-bottom: 50px;
+    margin-top: 200px;
+    text-align: justify;
+    text-align: center;
+
+}
+.containerpadrao{
+    text-align: center;
+}
+.containerleiamais{
+    width: 60%;
+    max-width: 1300px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.textleiamais{
+    font-size: 20pt;
+    font-variant: var(--fonte-titulos);
+    margin-left: 20px;
+}
+.titulosecundario{
+    font-size: 25pt;
+    font-variant: var(--fonte-titulos);
+    margin-left: 270px;
+    margin-right: 350px;
+    margin-bottom: 20px;
+    text-align: justify;
+    text-align: center;
+}
+
+h2{
+    font-variant: var(--fonte-titulos);
+    margin: 0 auto;
+    text-align: justify;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.publicidade{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+hr{
+    margin: auto;
+    width: 900px;
+    height: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+
+}
+.containerimg{
+    text-align: center;
+
+}
+.imgcontainer{
+    display: block;
+    margin: 0 auto;
+
+}
+.containertext{
+    text-align: center;
+}
+.maintext{
+
+    width: 910px;
     font-size: 20pt;
     font-variant: var(--fonte-escrita);
+    margin: 0 auto;
+    text-align: justify;
+    margin-bottom: 20px;
+
 
 }
 
 footer {
-    height: 230px;
+    height: auto;
     width: 100%;
     background-color: var(--verde-principal);
     color: white;
@@ -86,14 +183,14 @@ footer {
 
 footer .container4{
     width: 100%;
-    padding-top: 30px;
+    padding:30px 3px 0px 3px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
 .container4 .sobre{
-    width: 180px;
+    width: auto;
     font-size: x-large;
 }
 
@@ -105,24 +202,148 @@ footer .container4{
 
 .container4 h3{
     margin-bottom: 10px;
+    font-family: var(--fonte-titulos);
 }
 
 .container4 ul li{
     margin-left: 18px;
     line-height: 1.5em;
+    font-family: var(--fonte-escrita);
 }
 
 .redes-sociais{
-    width: 400px;
     font-size: x-large;
-    display: flex;
-    justify-content: space-between;
     line-height: 1.8em;
+    font-family: var(--fonte-escrita);
+}
+
+.insta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.youtube{
+    display: flex;
+    flex-direction: row;
 }
 
 .copyright{
-    height: 120px;
+    height: auto;
     font-size: large;
     width: 350px;
     margin-top: 20px;
+    font-family: var(--fonte-escrita);
+}
+@media (max-width:550px){
+    
+    .tituloprincipal{
+        width: 350px;
+        height: 125px;
+        margin: auto;
+        font-size: 20pt;
+    }
+    .imgcontainer{
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .containerleiamais{
+        width: 70%;
+        height: auto;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .textleiamais{
+        width: 340px;
+        height: auto;
+        margin: auto;
+        font-size: 14pt;
+        margin-bottom: 10px;
+        margin-top: 20px;
+
+    }
+    h1{
+        width: 350px;
+        height: 125px;
+        margin: auto;
+        font-size: 20pt;
+    }
+    .titulosecundario{
+        width: 350px;
+        height: 125px;
+        margin: auto;
+        font-size: 20pt;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    h2{
+        width: 350px;
+        height: 50px;
+        margin: auto;
+        margin-top: 10px;
+    }
+    hr{
+        margin: auto;
+        width: 350px;
+        height: 1px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .containerpadrao{
+        max-width: 100%;
+        height: auto;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    
+    .mainnews{
+        min-width: 10%;
+        height: auto;
+        display: block;
+    }
+    .publicidade{
+
+    }
+    .maintext{
+        width: 350px;
+        height: auto;
+        margin: auto;
+        font-size: 15px;  
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    footer .container4{
+        margin-top: 50px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .container4 .sobre{
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+
+    .sobre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
+
+    .redes-sociais p{
+        display: none;
+        margin-bottom: 15px;
+    }
+
+    .copyright{
+        margin-bottom: 30px;
+    }
+
 }
